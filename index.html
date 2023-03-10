@@ -4,9 +4,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/ag-grid-community/dist/ag-grid-community.min.nostyle.js">
+</script>
 </head>
 <body>
     <h1>18CSE301J - INFORMATION VISUALIZATION</h1>
     <hr>
+    <h2><em>DOCUMENTATION</em></h2>
+    <iframe src="https://drive.google.com/file/d/1RegnkN9yiKpws8-53CTYiyBRc9uGX6Bd/preview" width="640" height="480" allow="autoplay"></iframe>
+    <section id = "tableau">
+        <hr>
+        <h1>Tableau</h1>
+        <p>Following are the visualization of Crime analysis for India for the year 2020-2021. The first dashboard showcases the different criminal activities and can be analyzed per state.
+            Followed by that is the second visualization which tries to represent the relation between the number of law enforcers with the crime rate.</p>
+        <p><strong> Note: </strong>To keep the data comparable all the data have been divided with the population.</p>
+        <div id="vizContainer"></div>
+  <script src="https://us-east-1.online.tableau.com/javascripts/api/tableau-2.min.js"></script>
+  <script>
+    var viz
+    function initViz() {
+      var containerDiv = document.getElementById("vizContainer"),
+      url = "https://public.tableau.com/views/CrimeAnalysis2020/CRIMINALACTIVITY?:language=en-GB&:display_count=n&:origin=viz_share_link";
+
+      viz = new tableau.Viz(containerDiv, url);
+    }
+    initViz();
+  </script>
+  Following is the second visualiztion showcasing the law enforcement aspect.
+  <div id="vizContainer1" class = "secondviz"></div>
+  <script>
+    var viz
+    function initViz1() {
+      var containerDiv = document.getElementById("vizContainer1"),
+      url = "https://public.tableau.com/views/CrimeAnalysis20202/JUDICIALASPECT?:language=en-GB&:display_count=n&:origin=viz_share_link";
+
+      viz = new tableau.Viz(containerDiv, url);
+    }
+    initViz1();
+  </script>
+  <hr>
+</section>
 </body>
 </html>
