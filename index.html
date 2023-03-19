@@ -4,9 +4,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project</title>
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <!--CSS LINK AND JS-->
     <link rel="stylesheet" href="styles.css">
-    <script src="https://unpkg.com/ag-grid-community/dist/ag-grid-community.min.nostyle.js"></script>
     <script src = "script.js"></script>
+    <!--Tableau-->
+    <script src="https://unpkg.com/ag-grid-community/dist/ag-grid-community.min.nostyle.js"></script>
 
     <script type="text/javascript"
         src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
@@ -45,20 +50,40 @@
 
 </head>
 <body onload="createViz(0);">
-    <h1>18CSE301J - INFORMATION VISUALIZATION</h1>
-    <hr>
-    <h2>DOCUMENTATION</h2>
-    <div>
-    <iframe src="https://drive.google.com/file/d/1RegnkN9yiKpws8-53CTYiyBRc9uGX6Bd/preview" width="640" height="800" allow="autoplay" margin: auto></iframe>
-  </div>
+        <nav class="navbar sticky-top navbar-expand-lg bg-light-subtle">
+            <div class="container-fluid">
+              <a class="navbar-brand mx-auto" href="#">RA2011033010026</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                  <a class="nav-link active custom" aria-current="page" href="#introduction">ABOUT</a>
+                  <a class="nav-link" href="#tableau">TABLEAU</a>
+                  <a class="nav-link" href="#">Pricing</a>
+                  <a class="nav-link ">Disabled</a>
+                </div>
+              </div>
+            </div>
+        </nav>
+    <section id = "introduction">
+        <h2>ABOUT</h2>
+        <p>
+            Following visualiztion refers to the study of the criminal and juducial status of our country for the year 2020 - 2021. This project has been done for the subject Information Visualization (18CSE301J) under the guidance of Dr. N. Parthiban Sir.
+            The visualizations have been made using software using tableau, python and d3. 
+        </p>
+        <p><strong> Note: </strong>To keep the data comparable all the data have been divided with the population.</p>
+        <div>
+        <iframe src="https://drive.google.com/file/d/1RegnkN9yiKpws8-53CTYiyBRc9uGX6Bd/preview" width="640" height="800" allow="autoplay" margin: auto></iframe>
+        </div>
+    </section>
     <section id = "tableau">
         <hr>
         <h1>Tableau</h1>
-        <p>Following are the visualization of Crime analysis for India for the year 2020-2021. The first dashboard showcases the different criminal activities and can be analyzed per state.
-            Click "Next" to view the second visualization which represent the relation between the number of law enforcers with the crime rate.</p>
-        <p><strong> Note: </strong>To keep the data comparable all the data have been divided with the population.</p>
+        <p>Tableau is a powerful data visualization and business intelligence tool that enables users to analyze and present data in a visually compelling way. It is designed to help people see and understand their data by transforming it into interactive dashboards and reports.</p>
+        <p>Tableau has a user-friendly interface and provides extensive documentation and training resources, making it accessible to users with various levels of expertise. It is widely used by businesses, government organizations, and individuals to analyze data, make informed decisions, and communicate insights to stakeholders.</p>        
 
-        <div id="vizContainer" style="width:800px; height:800px; margin: auto"></div>
+        <div id="vizContainer" style="width:1100px; height:800px; margin: auto"></div>
         <div id="controls" style="padding:20px;">
         <button style="width:100px;" onclick="javascript:createViz(-1);">Previous</button>
         <button style="width:100px;" onclick="javascript:createViz(1);">Next</button>

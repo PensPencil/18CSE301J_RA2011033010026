@@ -1,5 +1,25 @@
+/*Tags*/
 div {
     display: flex;
     align-items: center;
     justify-content: center;
   }
+section{
+  padding: 0 3%;
+  background-color: #F0EEED;
+}
+/*Classes*/
+.container-fluid{
+  background-color: #332C39;
+  color: white;
+  
+}
+.navbar{
+  padding: 0;
+}
+.nav-link ,.navbar-brand{
+  color: white;
+}
+.navbar .navbar-nav .nav-link{
+  color: white;
+}
