@@ -1,1 +1,0 @@
-dff = dff[dff["Crime"] == option_slctd]
